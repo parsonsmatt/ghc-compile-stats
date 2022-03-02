@@ -168,9 +168,9 @@ ghcCompileStatsMain = do
         skippedAfter =
             totalModules - biggestModuleNumber
         rangeForCompilation =
-            biggestModuleNumber - smallestModuleNumber
+            biggestModuleNumber - smallestModuleNumber + 1
         skippedModules =
-            rangeForCompilation - compiledModuleCount
+            skippedAfter + rangeForCompilation - compiledModuleCount
 
     logs
         [ "Modules skipped: "
