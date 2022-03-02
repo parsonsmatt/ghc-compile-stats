@@ -12,3 +12,9 @@ but even with `-j` it's good to know how many modules you're skipping and how ma
 $ stack build
 $ stack install .
 ```
+
+## usage
+
+```
+$ cabal build | ghc-compile-stats
+```
