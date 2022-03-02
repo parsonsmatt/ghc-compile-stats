@@ -151,7 +151,7 @@ ghcCompileStatsMain = do
             [ "Module: ["
             , moduleName
             , "] compiled in "
-            , show moduleTimeSpec
+            , readableTime
             ]
     let compiledModuleCount =
             getSum $ gseCompiledModuleCount ghcStats
